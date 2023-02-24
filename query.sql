@@ -1,4 +1,4 @@
-ALTER Function [dbo].[Fn_aratarihler](@tarih1 date,@tarih2 date)
+CREATE Function [dbo].[Fn_aratarihler](@tarih1 date,@tarih2 date)
 Returns nvarchar(MAX)
 As
 Begin
@@ -14,3 +14,6 @@ Begin
 
 	return @tarihler
 End
+
+
+select dbo.Fn_aratarihler('01.01.2023','10.01.2023')
